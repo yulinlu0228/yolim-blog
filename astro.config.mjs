@@ -25,12 +25,17 @@ import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
+
+// GitHub Pages serves this repository below /yolim-blog/, while Vercel serves it
+// from the domain root. Vercel supplies the VERCEL environment variable at build time.
+const deploymentBase = process.env.VERCEL ? "/" : "/yolim-blog";
+
 // https://astro.build/config
 export default defineConfig({
 	// Modified for Yolim Blog in 2026. Based on the Mizuki blog project.
 	site: "https://yulinlu0228.github.io/",
 
-	base: "/yolim-blog",
+	base: deploymentBase,
 	trailingSlash: "always",
 	integrations: [
 		tailwind({

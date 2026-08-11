@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /_astro/
+
+Sitemap: https://yulinlu0228.github.io/sitemap-index.xml

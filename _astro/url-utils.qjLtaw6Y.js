@@ -1,0 +1,1 @@
+import"./config.t0bx1RsI.js";import"./zh_TW.Jbo5k0IW.js";function s(o,t){const n=o.replace(/^\/|\/$/g,"").toLowerCase(),r=t.replace(/^\/|\/$/g,"").toLowerCase();return n===r}function e(...o){return o.join("/").replace(/\/+/g,"/")}function u(o){return a(`/posts/${o}/`)}function a(o){return e("","/yolim-blog/",o)}export{u as g,s as p,a as u};

@@ -1,0 +1,160 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { songs } from "../data/music";
+import { url } from "../utils/url-utils";
+
+const title = "耳畔星河";
+const description = "反复播放的旋律，也是在替某段时光保存坐标。";
+---
+
+<MainGridLayout title={title} description={description}>
+	<section class="music-shell card-base">
+		<header class="music-header">
+			<p class="eyebrow">PLAYLIST · {songs.length} TRACKS</p>
+			<h1>{title}</h1>
+			<p>{description}</p>
+		</header>
+
+		<div class="song-list">
+			{songs.map((song) => (
+				<article class="song-card">
+					<div class="song-cover" aria-hidden="true">
+						<span>{song.index}</span>
+					</div>
+					<div class="song-copy">
+						<div class="song-meta">{song.year} · {song.artist}</div>
+						<h2>{song.title}</h2>
+						<p>{song.note}</p>
+						{song.audio ? (
+							<audio controls preload="none" src={url(song.audio)}>
+								你的浏览器暂不支持音频播放。
+							</audio>
+						) : (
+							<div class="song-actions">
+								<span class="pending">音频位置已预留</span>
+								{song.listenUrl && (
+									<a href={song.listenUrl} target="_blank" rel="noreferrer">前往音乐平台</a>
+								)}
+							</div>
+						)}
+					</div>
+				</article>
+			))}
+		</div>
+
+		<p class="music-note">
+			本站不提供未授权的商业音乐下载。之后可以加入你拥有发布权的音频文件，并直接在页面内播放。
+		</p>
+	</section>
+</MainGridLayout>
+
+<style>
+	.music-shell {
+		width: 100%;
+		padding: clamp(1.25rem, 4vw, 3rem);
+		border-radius: var(--radius-large);
+	}
+
+	.music-header {
+		max-width: 42rem;
+		margin-bottom: 2rem;
+	}
+
+	.eyebrow,
+	.song-meta {
+		color: var(--primary);
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+	}
+
+	.music-header h1 {
+		margin: 0.35rem 0 0.6rem;
+		font-size: clamp(2rem, 6vw, 3.75rem);
+		line-height: 1.05;
+	}
+
+	.music-header > p:last-child,
+	.song-card p,
+	.music-note {
+		color: color-mix(in srgb, currentColor 66%, transparent);
+	}
+
+	.song-list {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.song-card {
+		display: grid;
+		grid-template-columns: 6.5rem 1fr;
+		gap: 1.25rem;
+		align-items: center;
+		padding: 1rem;
+		border: 1px solid var(--line-divider);
+		border-radius: 1rem;
+		background: color-mix(in srgb, var(--card-bg) 88%, transparent);
+	}
+
+	.song-cover {
+		display: grid;
+		aspect-ratio: 1;
+		place-items: center;
+		border-radius: 0.85rem;
+		background: linear-gradient(145deg, hsl(var(--hue), 78%, 72%), hsl(calc(var(--hue) + 34), 58%, 42%));
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+
+	.song-copy h2 {
+		margin: 0.2rem 0 0.35rem;
+		font-size: 1.4rem;
+	}
+
+	.song-copy p {
+		margin: 0;
+	}
+
+	.song-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		align-items: center;
+		margin-top: 0.9rem;
+	}
+
+	.pending,
+	.song-actions a {
+		padding: 0.45rem 0.75rem;
+		border-radius: 999px;
+		font-size: 0.82rem;
+	}
+
+	.pending {
+		background: color-mix(in srgb, var(--primary) 12%, transparent);
+		color: var(--primary);
+	}
+
+	.song-actions a {
+		border: 1px solid var(--line-divider);
+		font-weight: 700;
+	}
+
+	.music-note {
+		margin: 1.5rem 0 0;
+		font-size: 0.85rem;
+	}
+
+	@media (max-width: 640px) {
+		.song-card {
+			grid-template-columns: 4.75rem 1fr;
+			gap: 0.9rem;
+			align-items: start;
+		}
+
+		.song-copy h2 {
+			font-size: 1.15rem;
+		}
+	}
+</style>

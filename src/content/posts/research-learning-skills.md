@@ -1,45 +1,43 @@
 ---
-title: "适合科研、学习与创作的 8 个 Agent Skills"
-published: 2026-07-18
-description: "整理一组适合研究生科研、学习新知识和游戏制作的实用 Skills。"
-tags: [AI, Skills, 科研工具, 学习]
+title: "最近收藏的 5 个科研、学习与创作工具"
+published: 2026-08-12
+description: "从个人海报创作、AI 学习助手到求职流程与学术研究，记录五个值得继续探索的项目。"
+tags: [AI, 科研工具, 学习, 创作, Skills]
 category: "拾知成册"
 draft: false
-author: "Yolim"
+author: "Yulin"
 ---
 
-GitHub 星标反映的是整个仓库的热度，并不是单个 Skill 的独立评分。安装前仍应检查 `SKILL.md`、脚本、网络访问范围和许可证。
+这一页不再追求“工具越多越好”，而是记录近期真正想继续使用和研究的项目。它们有些是可安装的 Skill，有些则是完整的独立项目；两者的使用方式不同，但都很有意思。
 
-## Systematic Debugging
+## 1. Photo Personalike Poster｜我的个人海报创作 Skill
 
-来自 `obra/superpowers`。要求 Agent 先定位根因，再提出修复方案，适合程序报错、测试失败和性能异常。
+[photo-personalike-poster](https://github.com/yulinlu0228/photo-personalike-poster) 是我整理的图像创作 Skill。它从一张人物、宠物或物品照片中提取少量辨识特征，再重新绘制成朋克感二维海报或彩色电影感插画。
 
-## PDF Processing
+它适合做头像、纪念海报、宠物插画，也适合把一张普通照片变成更有叙事感的视觉作品。项目采用 Apache-2.0 许可证。
 
-来自 `anthropics/skills`。覆盖 PDF 阅读、表格提取、合并拆分、OCR、表单与新建 PDF，适合论文阅读和正式文档处理。
+## 2. DeepTutor｜港大团队的个性化学习工作台
 
-## React Best Practices
+[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) 是香港大学数据科学实验室推出的开源学习平台。它将对话式辅导、解题、测验生成、资料库检索、可视化和学习记录整合在一个工作台中。
 
-来自 `vercel-labs/agent-skills`。整理 React 与 Next.js 的性能规则，适合网页和游戏工具界面开发。
+对研究生而言，比较吸引我的地方是它可围绕教材、论文或个人资料建立知识库，再用同一套上下文完成提问、整理、练习和研究探索。它是独立应用，不是一个单独安装到 Codex 的 Skill；本地运行需要配置模型与运行环境。
 
-## Web Design Guidelines
+## 3. JobHuntBot｜让求职投递变得可追踪
 
-来自 `vercel-labs/agent-skills`。用于检查界面可访问性、交互、排版与用户体验。
+[DanielPan12/JobHuntBot](https://github.com/DanielPan12/JobHuntBot) 是一个由 AI 编程 Agent 驱动的求职投递工作流，配有本地进度追踪看板。
 
-## Jupyter Notebook
+它的价值不只是“自动投简历”，而是把职位筛选、材料准备、投递记录和后续跟进整理成可检查的流程。对于毕业求职或寻找实习时容易散乱的信息管理，这种结构化方式很有参考意义。项目采用 MIT 许可证。
 
-来自 `openai/skills`。帮助建立结构清楚、可复现的实验或教学 Notebook，适合科研探索和数据实验。
+## 4. Academic Research Suite｜适合学术研究的工作流 Skill
 
-## Security Threat Model
+[Academic Research Suite for Codex](https://github.com/Imbad0202/academic-research-skills-codex) 将文献研究、论文起草、同行评审、研究到论文的完整流程，以及实验规划整合进一个面向 Codex 的 Skill。
 
-来自 `openai/skills`。根据真实代码识别信任边界、重要资产、攻击路径和缓解措施。
+它强调“人始终在环”：Skill 可以协助找文献、核查引用、梳理论证、设计实验与模拟审稿，但研究问题、方法选择和结论判断仍由研究者负责。对于希望让科研过程更可复现的研究生，这比单纯让模型代写更有价值。
 
-## Postgres Best Practices
+## 5. Tait CRT Interface Skill｜复古 CRT 像素画面
 
-来自 `supabase/agent-skills`。覆盖查询、索引、连接池、表结构、监控和行级权限。
+[Tait CRT Interface Skill](https://github.com/TaiT-tt/tait-crt-interface-skill) 用于把人物、宠物或物品重新设计为带有 1980 年代 CRT 电脑界面气质的像素插画。
 
-## Accelerated Computing cuDF
+它并非给原图直接套像素滤镜，而是保留少量识别特征后重新创作角色、色板与界面元素。因此适合做复古头像、像素海报、游戏感壁纸和带人物个性的桌面视觉。
 
-来自 `NVIDIA/skills`。帮助把较大的 pandas 数据处理迁移到 GPU 加速流程，适合大规模科研数据。
-
-> 安装 Skill 的目标不是让工具越多越好，而是让常做的工作变得更稳定、更可复现。
+> 使用任何第三方项目之前，都应先阅读其 README、许可证、权限说明与依赖要求；对需要上传资料或调用外部服务的工具，尤其要注意隐私与数据安全。

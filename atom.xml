@@ -5,7 +5,7 @@
   <link href="https://yulinlu0228.github.io/" rel="alternate" type="text/html"/>
   <link href="https://yulinlu0228.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://yulinlu0228.github.io/</id>
-  <updated>2026-08-12T02:08:01.601Z</updated>
+  <updated>2026-08-12T02:21:04.805Z</updated>
   <language>zh_CN</language>
   <entry>
     <title>决定拥有一个自己的小网页</title>
@@ -56,36 +56,5 @@
       <name>Yolim</name>
     </author>
     <category term="拾知成册"></category>
-  </entry>
-  <entry>
-    <title>Codex 工作周报｜从完成分析到建立可信的研究流程</title>
-    <link href="https://yulinlu0228.github.io/posts/codex-weekly-report-2026-07-17/" rel="alternate" type="text/html"/>
-    <id>https://yulinlu0228.github.io/posts/codex-weekly-report-2026-07-17/</id>
-    <published>2026-07-17T00:00:00.000Z</published>
-    <updated>2026-07-17T00:00:00.000Z</updated>
-    <summary>这一周推进重金属研究、采样地图、蓝冰指标复核，并为研究项目建立长期记忆。</summary>
-    <content type="html"><![CDATA[<p>这一周，我开始从完成单项分析，走向更可信、更可续接的研究。</p>
-<p>比起做出更多结果，更重要的是让每一步都能解释、核验，并在以后继续。</p>
-<h2>重金属论文与方法复核</h2>
-<p>重新整理浓度统计与图件，复核 PCA、相关性、水质标准和致癌风险参数。PCA 前三轴累计解释率为 85.48%，但 KMO 为 0.522，因此相关结果只适合作为探索性证据。</p>
-<h2>两套采样地图完成整理</h2>
-<p>完成阿勒泰与格罗夫山采样区地图、可编辑工程和方法记录，使坐标系、底图、标注与正式图件形成可追溯的证据链。</p>
-<h2>蓝冰文献与光谱指标推进</h2>
-<p>重整蓝冰文献主线，独立复核 FI、BIX、HIX，完成 UV–Vis 指标联图，并更新 FT-ICR-MS 的 DBE–C number 图件解释。</p>
-<h2>研究项目开始拥有长期记忆</h2>
-<p>建立个人 Obsidian 知识库，为 FT-ICR-MS、EEM 和 GIS 项目补齐长期规则与状态页，并清理重复项目与无用缓存。</p>
-<h2>AI 与 Codex 工作方式</h2>
-<p>进一步厘清 ChatGPT 与 Codex 的分工，建立技能安装前检查安全性、实际增益和功能重叠的原则。</p>
-<h2>下一周</h2>
-<ul>
-<li>补齐阿勒泰稿件的 PMF、风险重算与标准值分层</li>
-<li>建立 8 个蓝冰样品的跨平台指标主表与数据字典</li>
-<li>最终核对两套采样地图并写成正式方法说明</li>
-</ul>
-]]></content>
-    <author>
-      <name>Yolim</name>
-    </author>
-    <category term="浮光絮语"></category>
   </entry>
 </feed>

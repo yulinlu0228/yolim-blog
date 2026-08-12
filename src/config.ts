@@ -107,13 +107,9 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "一页之间", // 主页横幅主标题
+			title: "Hi im yulin", // 主页横幅主标题
 
-			subtitle: [
-				"记录正在发生的生活",
-				"收藏值得反复阅读的知识",
-				"回望来时的路，也听喜欢的歌",
-			],
+			subtitle: "拥抱科技，迎接未来。",
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
 
